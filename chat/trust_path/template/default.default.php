@@ -18,7 +18,7 @@
 </div>
 
 <div class="t_toggle">
-  <p><font style="font-size:12px;"><a href="#" onclick="toggle();">[老子要换头像！]</a> - <a href="http://www.bajibaji.net/chat/offline">[离线讨论]</a> - <a href="http://lovejiani.com/blog/dollars">[关于]</a> - <a href="http://www.bajibaji.net">♥</a></font></p>
+  <p><font style="font-size:12px;"><a href="#" onclick="toggle();"><span style="color: rgb(255, 0, 153);">[老子要换个头像！]</span></a> - <a href="http://www.bajibaji.net/chat/offline">[离线讨论]</a> - <a href="http://lovejiani.com/blog/dollars">[关于]</a> - <a href="http://www.bajibaji.net">♥</a></font></p>
 </div>
 <div id="t_extra" style="display:none">
 <div class="t_language">
@@ -31,10 +31,12 @@
 
 </select>
 </div>
+<div><span style="color: rgb(255, 0, 153);">鼠标点击图片即可更换</span></div>
 <ul class="icons">
 <?php foreach ( $dura['icons'] as $icon => $file ) : ?>
 <li>
 <label>
+	
 <img src="<?php echo DURA_URL.'/css/'.$file ?>" />
 <input type="radio" name="icon" value="<?php echo $icon ?>" />
 </label>
